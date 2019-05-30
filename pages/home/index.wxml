@@ -1,0 +1,17 @@
+<view class="login">
+    <view class="logo">
+        <image src="/img/logo.png"></image>
+    </view>
+    <view class="from">
+        <view class="from-li">
+            
+            <input bindinput="onChangeUser" placeholder="请输入用户名" placeholder-class="pla-style"/>
+        </view>
+        <view class="from-li">
+            
+            <input bindinput="onChangePwd"type="password" placeholder="请输入登录密码"  placeholder-class="pla-style"/>
+        </view>
+        <button type="button" class="btn" bindtap="login">登录</button>
+        <button type="button" class="btn" bindtap="regist">注册</button>
+    </view>
+</view>

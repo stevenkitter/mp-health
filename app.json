@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/index/index",
+    "pages/plan/index",
+    "pages/near/index",
+    "pages/lore/index",
+    "pages/addPlan/addPlan",
+    "pages/loreDetails/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于查找附近门店"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/img/index1.png",
+        "selectedIconPath": "/img/index2.png"
+      },
+      {
+        "pagePath": "pages/plan/index",
+        "text": "计划",
+        "iconPath": "/img/plan1.png",
+        "selectedIconPath": "/img/plan2.png"
+      },
+      {
+        "pagePath": "pages/near/index",
+        "text": "周边",
+        "iconPath": "/img/near1.png",
+        "selectedIconPath": "/img/near2.png"
+      },
+      {
+        "pagePath": "pages/lore/index",
+        "text": "知识",
+        "iconPath": "/img/lore1.png",
+        "selectedIconPath": "/img/lore2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

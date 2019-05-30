@@ -1,0 +1,44 @@
+<view class="container">
+    <view class="contentHead">
+        <text class="headTitle">计划列表</text>
+        <image class="arrowIcon" src="/img/addPlan.png" bindtap="addPlan"/>
+    </view>
+    <view class="product-list">
+        <view class="product-item-wrapper">
+            <view wx:for="{{planData}}">
+                <view class="plan-row plan-row-{{item.state}}">
+                    <view class="product-item">
+                        <view class="product-detail">
+                            <view class="titleWrapper">
+                                <text class="title">{{item.planName}}</text>
+                            </view>
+                            <view class="row">
+                                <text class="code">开始日期</text>
+                                <text class="count">{{item.startTime}}</text>
+                            </view>
+                            <view class="row">
+                                <text class="price">结束日期</text>
+                                <text class="expdate">{{item.endTime}}</text>
+                            </view>
+                            <view class="row">
+                                <text class="price">备注</text>
+                                <text class="expdate">{{item.desc}}</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="button-wrapper">
+                        <view wx:if="{{item.state=='0'}}" data-id='{{item.id}}' class="button" bindtap="stopPlan">
+                            <text class="button-text">停止</text>
+                        </view>
+                        <view wx:if="{{item.state=='1'}}" data-id='{{item.id}}' class="button" bindtap="startPlan">
+                            <text class="button-text">启动</text>
+                        </view>
+                        <view class="button" data-id='{{item.id}}' bindtap="delPlan">
+                            <text class="button-text">删除</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

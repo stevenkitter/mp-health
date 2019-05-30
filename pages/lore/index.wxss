@@ -1,0 +1,84 @@
+.container {
+  margin-bottom: 20rpx;
+  background: #fff;
+  width: 750rpx;
+  height: 1334rpx;
+}
+.search-wrapper {
+  padding: 10rpx 20rpx;
+  background-color: #fff;
+}
+
+.search-input {
+  background-color: #fafafa;
+  font-size: 28rpx;
+  height: 56rpx;
+  line-height: 1rpx;
+}
+
+.content {
+  padding: 0;
+  width: 100%;
+}
+
+.contentHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx;
+  height: 51.2rpx;
+}
+
+.headTitle {
+  color: #333;
+  font-size: 32rpx;
+  line-height: 51.2rpx;
+}
+
+
+
+.postItem {
+  display: flex;
+  justify-content: space-between;
+  height: 140rpx;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+  background: #fff;
+}
+
+.itemBody {
+  width:550rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemIntro {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemTitle {
+  font-size: 28rpx;
+  line-height: 45rpx;
+}
+
+.itemDesc {
+  color: #666;
+  font-size: 22rpx;
+  line-height: 35.2rpx;
+  height: 100rpx;
+  display: -webkit-box;
+overflow: hidden;
+text-overflow: ellipsis;
+word-wrap: break-word;
+white-space: normal !important;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+}
+
+.itemImage {
+  width: 198rpx;
+  height: 124rpx;
+  display: block;
+}

@@ -1,0 +1,71 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAFAFA;
+}
+.logo{
+    width: 100%;
+    height: 290rpx;
+    padding-top: 63rpx;
+    box-sizing: border-box;
+}
+.logo>image{
+    display: block;
+    width: 152rpx;
+    height: 96rpx;
+    margin: 0 auto;
+}
+.from{
+    padding: 0 40rpx;
+    box-sizing: border-box;
+}
+.li>image{
+    display: inline-block;
+    width: 32rpx;
+    height: 32rpx;
+}
+.btn{
+    background-color: #FF5000;
+    color: #fff;
+    font-size: 34rpx;
+    margin-top: 77rpx;
+}
+.van-cell{
+    background-color: #FAFAFA!important;
+    border-bottom: 1rpx solid #DCDCDC;
+}
+.van-cell__left-icon-wrap{
+    margin-right: 30rpx!important;
+}
+.from-li{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-bottom: 1rpx solid #B5B5B5;
+}
+
+.from-li>image{
+    width: 32rpx;
+    height: 32rpx;
+    margin-left: 10rpx;
+}
+.from-li>view{
+    height: 26rpx;
+    width: 1rpx;
+    margin: 0 20rpx;
+    border-right: 1rpx solid #B5B5B5;
+}
+.from-li>input{
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 30rpx;
+    color: #333;
+}
+.pla-style{
+    font-size: 30rpx;
+    color: #C8C8C8;
+}
+

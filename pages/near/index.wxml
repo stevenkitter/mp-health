@@ -1,0 +1,13 @@
+<view class="container">
+    <map
+    wx:if="{{showMap}}"
+    id="myMap"
+    show-location="true"
+    style="width: 100%; height:100vh; "
+    longitude="{{mapData.longitude}}"
+    latitude="{{mapData.latitude}}"
+    scale="{{mapData.scale}}"
+    markers="{{mapData.markers}}"
+  >
+  </map>
+</view>

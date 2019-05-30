@@ -1,0 +1,26 @@
+.container {
+  margin-bottom: 20rpx;
+  background: #fff;
+  width: 750rpx;
+  height: 1334rpx;
+}
+
+
+.title{
+  font-size: 34rpx;
+  font-weight: 600;
+  color:#333;
+  margin-bottom: 20px;
+}
+
+.article-content{
+  color: #666;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+  margin-left: 30rpx;
+  line-height: 40rpx;
+  letter-spacing: 2rpx;
+}
+.vTitle{
+  text-align: center;
+}

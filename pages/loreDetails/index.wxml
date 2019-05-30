@@ -1,0 +1,10 @@
+<view class="container">
+   
+    <!-- 标题内容 -->
+    <view class="vTitle"><text class="title">{{title}}</text></view>
+     
+
+     <text class="article-content">{{content}}</text>
+
+
+</view>

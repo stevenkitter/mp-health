@@ -1,0 +1,49 @@
+<view>
+    <view class="ul">
+       
+       
+        <view class="li" >
+            <view class="left">计划名称</view>
+             <picker bindchange="changPlanName"  range="{{planName}}">
+            <view class="right">
+                <view>{{planData.planName?planData.planName:'点击选择'}}</view>  
+            </view>
+            </picker>
+        </view>
+        
+        <view class="li" >
+            <view class="left">开始时间</view>
+            <picker bindchange="changstartTime" mode="date" >
+            <view class="right">
+                <view>{{planData.startTime?planData.startTime:'点击选择'}}</view>  
+            </view>
+            </picker>
+        </view>
+
+
+        <view class="li" >
+            <view class="left">结束时间</view>
+             <picker bindchange="changendTime" mode="date" >
+            <view class="right">
+                <view>{{planData.endTime?planData.endTime:'点击选择'}}</view>  
+            </view>
+            </picker>
+        </view>
+
+        
+        <view class="li" >
+            <view class="left">备注</view>
+            <view class="right">
+                <input type='text' bindinput="editDone" />
+            </view>
+           
+        </view>
+
+
+       
+      
+       
+        <button class="btn" bindtap="submitPlan">添加计划</button>
+    </view>
+    
+</view>

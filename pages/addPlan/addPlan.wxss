@@ -1,0 +1,86 @@
+.ul{
+   padding-top: 30rpx;
+}
+.li{
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size:28rpx;
+    color:#5D5D5D;
+    border-bottom: 1rpx solid #e8eaec;
+
+}
+
+.li>.left{
+    width: 160rpx;
+    float: left;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.right{
+    /*width: calc(100% - 160rpx);*/
+    height: 100rpx;
+    line-height: 100rpx;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.li>.right-s{
+    float: right;
+    height: 100rpx;
+    line-height: 100rpx;
+    margin-right: 58rpx;
+}
+.li>.right>.tou{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.li>.right>.r-img{
+    width: 18rpx;
+    height: 33rpx;
+    margin-left: 16rpx;
+}
+
+.btn{
+    width: 100%;
+    background-color: #CA001C;
+    color: #fff;
+    margin-top: 50rpx;
+}
+.radio-boxs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 500rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.h3-tip{
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+}
+.input-sty{
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: #000;
+    padding-left: 30rpx;
+}
+.van-radio{
+    padding: 6rpx 20rpx;
+    width: 500rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    border:1px solid;
+}
+.right>view{
+    min-width:30px;
+    text-align: right;
+}

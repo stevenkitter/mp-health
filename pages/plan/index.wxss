@@ -1,0 +1,118 @@
+.container {
+  margin-bottom: 20rpx;
+  background: #fff;
+  width: 750rpx;
+  height: 1334rpx;
+}
+.product-item-wrapper {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.product-detail {
+  width: 100%;  
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  text-align: left;
+}
+
+.pic {
+  width: 160rpx;
+  height: 160rpx;
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 38rpx;
+}
+
+.titleWrapper {
+  line-height: 40rpx;
+  margin-bottom: 6rpx;
+}
+
+.title {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  text-align: left;
+  color:#FFF;
+  font-weight:bold
+}
+
+.code {
+  font-size: 24rpx;
+}
+
+.count {
+  font-size: 24rpx;
+}
+
+.price {
+  font-size: 24rpx;
+  
+}
+
+.expdate {
+  font-size: 24rpx;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20rpx;
+}
+
+.button {
+  width: 200rpx;
+  text-align: center;
+  margin-bottom:10px;
+  border: 2rpx solid #eee;
+  border-radius: 15rpx;
+  line-height: 54rpx;
+}
+
+.button-text {
+  font-size: 28rpx;
+}
+.plan-row{
+  margin-bottom: 20px;
+  border-radius:15px;
+}
+.plan-row-0{
+  background-color:#00B26A
+}
+.plan-row-1{
+  background-color: #2881E0
+}
+.plan-row-2{
+  background-color: #8590A6
+}
+.headTitle {
+  color: #333;
+  font-size: 32rpx;
+  line-height: 51.2rpx;
+}
+
+.arrowIcon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 30rpx
+}
+.contentHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx;
+  height: 51.2rpx;
+}

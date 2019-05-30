@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="search-wrapper">
+    <input class="search-input" type="text" confirm-type="search" placeholder="输入标题内容搜索" bindconfirm="searchLore" />
+  </view>
+  <view class="content">
+    <view class="contentHead">
+      <text class="headTitle">知识广场</text>
+    </view>
+    <view wx:for="{{loreData}}" wx:for-index="idx">
+      <view hidden="{{loreShow[idx]}}" class="postItem" data-id="{{item.id}}" bindtap="details">
+        <view class="itemBody">
+          <view class="itemIntro">
+            <text class="itemTitle">{{item.title}}</text>
+            <text class="itemDesc">{{item.shortContent}}</text>
+          </view>
+        </view>
+        <image class="itemImage" src="{{item.picture}}" />
+      </view>
+    </view>
+  </view>
+</view>

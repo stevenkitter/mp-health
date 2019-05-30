@@ -1,0 +1,67 @@
+<view>
+    <view class="ul">
+        <view class="li">
+            <view class="left">用户名</view>
+            <view class="right">
+                <view>{{userInfo.userName}}</view>
+            </view>
+        </view>
+     
+       
+        <view class="li" >
+            <view class="left">性别</view>
+             <picker bindchange="changeSex" value="{{userInfo.sex}}" range="{{sexPicker}}">
+            <view class="right">
+                <view>{{userInfo.sex=='0' ? '男' : '女'}}</view>
+                
+            </view>
+            </picker>
+        </view>
+
+        <view class="li " bindtap="changePhone">
+            <view class="left">身高(cm)</view>
+            <view class="right">
+                <view bindtap="edit" data-id="height" wx:if="{{!editFlag.height}}">{{userInfo.height?userInfo.height:'点击输入'}}</view>
+                 <input wx:if="{{editFlag.height}}"  data-id="height" type='number' value="{{userInfo.height}}" bindblur="editDone" focus="{{editFlag.height}}" />
+            </view>
+        </view>
+
+        
+        <view class="li">
+            <view class="left">体重(kg)</view>
+            <view class="right">
+                <view bindtap="edit" data-id="weight" wx:if="{{!editFlag.weight}}">{{userInfo.weight?userInfo.weight:'点击输入'}}</view>
+                 <input wx:if="{{editFlag.weight}}"  data-id="weight" type='number' value="{{userInfo.weight}}" bindblur="editDone" focus="{{editFlag.weight}}" />
+               
+            </view>
+        </view>
+        <view class="li ">
+            <view class="left">腰围(cm)</view>
+            <view class="right">
+                 <view bindtap="edit" data-id="yaowei" wx:if="{{!editFlag.yaowei}}">{{userInfo.yaowei?userInfo.yaowei:'点击输入'}}</view>
+                 <input wx:if="{{editFlag.yaowei}}"  data-id="yaowei" type='number' value="{{userInfo.yaowei}}" bindblur="editDone" focus="{{editFlag.yaowei}}" />
+                
+            </view>
+        </view>
+         <view class="li ">
+            <view class="left">胸围(cm)</view>
+            <view class="right">
+                 <view bindtap="edit" data-id="tunwei" wx:if="{{!editFlag.tunwei}}">{{userInfo.tunwei?userInfo.tunwei:'点击输入'}}</view>
+                 <input wx:if="{{editFlag.tunwei}}"  data-id="tunwei" type='number' value="{{userInfo.tunwei}}" bindblur="editDone" focus="{{editFlag.tunwei}}" />
+                
+            </view>
+        </view>
+        <view class="li ">
+            <view class="left">血糖(mmol/L)</view>
+            <view class="right">
+                 <view bindtap="edit" data-id="xuetang" wx:if="{{!editFlag.xuetang}}">{{userInfo.xuetang?userInfo.xuetang:'点击输入'}}</view>
+                 <input wx:if="{{editFlag.xuetang}}"  data-id="xuetang" type='number' value="{{userInfo.xuetang}}" bindblur="editDone" focus="{{editFlag.xuetang}}" />
+                
+            </view>
+        </view>
+      
+       
+        <button class="btn" bindtap="toSubmit">健康评测</button>
+    </view>
+    
+</view>

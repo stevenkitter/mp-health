@@ -1,0 +1,6 @@
+.container {
+  margin-bottom: 20rpx;
+  background: #fff;
+  width: 750rpx;
+  height: 1334rpx;
+}
