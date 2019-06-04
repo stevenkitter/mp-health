@@ -1,0 +1,21 @@
+<!--pages/postCircle/postCircle.wxml-->
+<!--pages/course/postCourse.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+
+    <view class='file'>
+      <image class='placeholder' wx:if="{{ !uploaded }}" src='/image/draw.png'></image>
+      <image wx:if="{{ uploaded }}" src='{{ imageUrl }}'></image>
+    </view>
+
+    <view class='actions'>
+      <view class='action'>
+        <button class='upload_btn' bindtap='chooseVideo'>选择或者拍摄照片</button>
+      </view>
+      <view class='title'>
+        <textarea placeholder="说点什么吧" auto-focus bindinput='bindTitleInput' ></textarea>
+      </view>
+      <button class="sure_btn" bindtap='sure'>确定</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,60 @@
+<!--pages/planDetail/planDetail.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+    <view class='top'>
+      <text class='title'>{{plan.name}}</text>
+      <text class='desc'>{{plan.description}}</text>
+      <view class='four'>
+        <view class='card card0'>
+          <text class='card_title'>计划周期</text>
+          <text class='card_val'>{{plan.period}}</text>
+          <text class='card_unit'>天</text>
+        </view>
+        <view class='card card1'>
+          <text class='card_title'>饮食摄入</text>
+          <text class='card_val'>{{plan.foodIn}}</text>
+          <text class='card_unit'>千卡/天</text>
+        </view>
+        <view class='card card2'>
+          <text class='card_title'>运动消耗</text>
+          <text class='card_val'>{{plan.consume}}</text>
+          <text class='card_unit'>千卡/天</text>
+        </view>
+        <view class='card card3'>
+          <text class='card_title'>目标</text>
+          <text class='card_val'>{{plan.plan}}</text>
+        </view>
+      </view>
+      <view class='tip'>循序渐进才是健康瘦身，完成本计划之后，您可以继续选择下一计划来达到目标体重</view>
+    </view>
+    <view class='sports'>
+      <text class='sport_title'>运动计划</text>
+      <view class='item_container'>
+        <view class='sport_item' wx:for="{{plan.sports}}" wx:key="{{item.id}}">
+          <view class='item_top'>{{item.stage}}</view>
+          <view class='item_content'>
+            <text class='desc'>{{item.cycle}}</text>
+            <text class='desc'>{{item.target}}</text>
+            <text class='desc'>{{item.traningTime}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='sports'>
+      <text class='sport_title'>饮食方案</text>
+      <view class='item_container_food'>
+        <text class='desc'>每日建议摄入1300千卡</text>
+          
+        <view class='cells'>
+          <foodCell title = "蛋白质" value="{{plan.food.proteome}}" unit="克"></foodCell>
+          <foodCell title = "碳水化合物" value="{{plan.food.carbohydrate}}" unit="克"></foodCell>
+          <foodCell title = "脂肪" value="{{plan.food.fat}}" unit="克"></foodCell>
+        </view>
+      </view>
+      <view class='desc' style='background: #fff'>{{plan.secret}}</view>
+    </view>
+    <view class='action'>
+      <button class='button' bindtap='choose'>选择计划</button>
+    </view>
+  </view>
+</view>

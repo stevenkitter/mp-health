@@ -1,0 +1,14 @@
+<!--pages/circle/circle.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+    <view class='item' wx:for='{{cards}}' wx:key='{{item.id}}'>
+      <view class='top'>
+        <view class='tag'></view>
+        <text class='content'>{{item.content}}</text>
+        <text class='time'>{{item.created}}</text>
+      </view>
+      <image src='{{item.file.fileName}}' bindtap='imageBig' data-index='{{index}}'></image>
+    </view>
+    <image  class='add_image' src='../../image/add.png' bindtap='add'></image>
+  </view>
+</view>

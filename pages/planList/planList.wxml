@@ -1,0 +1,27 @@
+<!--pages/planList/planList.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+    <view class='top'>
+      <text class='plan_days'>{{plan.days}}</text>
+      <text class='plan_text'>已经坚持天数</text>
+    </view>
+    <view class='content'>
+      <text class='name'>{{plan.plan.name}}</text>
+      <text class='days'>{{plan.days + "/" + plan.plan.period}}</text>
+      <view class='item'>
+        <image src='{{plan.plan.file.fileName}}'></image>
+        <text class='title'>今日打卡</text>
+        
+        <text class='tip'>现在开始今天的计划吧</text>
+        <text class='percent'>{{plan.percent + "%"}}</text>
+        
+        <text class='percent_text'>完成进度</text>
+        <progress percent="{{plan.percent}}" active />
+        
+      </view>
+      <view class='action' bindtap='circle'>
+       <text>+ 打卡吧</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,6 +1,6 @@
 <view class="login">
     <view class="logo">
-        <image src="/img/logo.png"></image>
+        <image src=""></image>
     </view>
     <view class="from">
         <view class="from-li">

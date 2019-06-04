@@ -1,0 +1,46 @@
+/* pages/circle/circle.wxss */
+.tapContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #F8F8F8;
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.tag {
+  width: 3px;
+  height: 20px;
+  background: #DB3936;
+  margin-right: 10px;
+}
+.content{
+  font-size: 15px;
+  color: #454545;
+  flex: 2;
+}
+.time{
+  font-size: 12px;
+}
+
+image{
+  width: 80px;
+  height: 80px;
+}
+
+.add_image {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}

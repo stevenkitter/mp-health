@@ -1,0 +1,57 @@
+/* pages/postCircle/postCircle.wxss */
+
+.file {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.placeholder {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.actions {
+  background: #fff;
+  border-bottom: 1px solid #f3f4f8;
+  margin: 0px 10px 10px 10px;
+  padding: 20px;  
+}
+
+.upload_btn {
+  background: #4990E4;
+  color: #fff;
+  font-size: 13px;
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  height: 35px;
+  border: 1px solid #f3f4f8;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+
+textarea {
+  border: 1px solid #f3f4f8;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100%;
+  height: 120px;
+  padding: 10px 10px;
+}
+
+.sure_btn {
+  background: #fff;
+  border: 1px solid #72AAE4;
+  color: #72AAE4;
+  font-size: 13px;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}

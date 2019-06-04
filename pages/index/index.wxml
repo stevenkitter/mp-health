@@ -1,11 +1,6 @@
 <view>
     <view class="ul">
-        <view class="li">
-            <view class="left">用户名</view>
-            <view class="right">
-                <view>{{userInfo.userName}}</view>
-            </view>
-        </view>
+  
      
        
         <view class="li" >
@@ -38,24 +33,24 @@
         <view class="li ">
             <view class="left">腰围(cm)</view>
             <view class="right">
-                 <view bindtap="edit" data-id="yaowei" wx:if="{{!editFlag.yaowei}}">{{userInfo.yaowei?userInfo.yaowei:'点击输入'}}</view>
-                 <input wx:if="{{editFlag.yaowei}}"  data-id="yaowei" type='number' value="{{userInfo.yaowei}}" bindblur="editDone" focus="{{editFlag.yaowei}}" />
+                 <view bindtap="edit" data-id="waist" wx:if="{{!editFlag.waist}}">{{userInfo.waist?userInfo.waist:'点击输入'}}</view>
+                 <input wx:if="{{editFlag.waist}}"  data-id="waist" type='number' value="{{userInfo.waist}}" bindblur="editDone" focus="{{editFlag.waist}}" />
                 
             </view>
         </view>
          <view class="li ">
             <view class="left">胸围(cm)</view>
             <view class="right">
-                 <view bindtap="edit" data-id="tunwei" wx:if="{{!editFlag.tunwei}}">{{userInfo.tunwei?userInfo.tunwei:'点击输入'}}</view>
-                 <input wx:if="{{editFlag.tunwei}}"  data-id="tunwei" type='number' value="{{userInfo.tunwei}}" bindblur="editDone" focus="{{editFlag.tunwei}}" />
+                 <view bindtap="edit" data-id="bust" wx:if="{{!editFlag.bust}}">{{userInfo.bust?userInfo.bust:'点击输入'}}</view>
+                 <input wx:if="{{editFlag.bust}}"  data-id="bust" type='number' value="{{userInfo.bust}}" bindblur="editDone" focus="{{editFlag.bust}}" />
                 
             </view>
         </view>
         <view class="li ">
             <view class="left">血糖(mmol/L)</view>
             <view class="right">
-                 <view bindtap="edit" data-id="xuetang" wx:if="{{!editFlag.xuetang}}">{{userInfo.xuetang?userInfo.xuetang:'点击输入'}}</view>
-                 <input wx:if="{{editFlag.xuetang}}"  data-id="xuetang" type='number' value="{{userInfo.xuetang}}" bindblur="editDone" focus="{{editFlag.xuetang}}" />
+                 <view bindtap="edit" data-id="blood" wx:if="{{!editFlag.blood}}">{{userInfo.blood?userInfo.blood:'点击输入'}}</view>
+                 <input wx:if="{{editFlag.blood}}"  data-id="blood" type='number' value="{{userInfo.blood}}" bindblur="editDone" focus="{{editFlag.blood}}" />
                 
             </view>
         </view>

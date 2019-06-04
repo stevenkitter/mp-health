@@ -1,0 +1,21 @@
+/* components/meCell/meCell.wxss */
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 0 10px;
+  width: 215rpx;
+} 
+
+
+
+.title {
+  font-size: 10px;
+}
+.value {
+  font-size: 13px;
+}
+.unit {
+  font-size: 10px;
+}

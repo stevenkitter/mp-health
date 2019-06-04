@@ -1,0 +1,6 @@
+<!--components/meCell/meCell.wxml-->
+<view class='cell'>
+  <text class='title' >{{ title }}</text>
+  <text class='value' >{{ value }}</text>
+  <text class='unit' >{{ unit }}</text>
+</view>

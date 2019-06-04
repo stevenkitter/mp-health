@@ -1,0 +1,27 @@
+<!--pages/detections/detections.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+    <view class='item' wx:for="{{ detections }}" wx:key="{{ item.id }}">
+      <view class='top'>
+        <text class='title'>{{ item.conclusion.desc }}</text>
+        <text class='time'>{{ item.created }}</text>
+      </view>
+      <view class='top'>
+        <text class='title'>{{ item.conclusion.waist }}</text>
+      </view>
+      <view class='top'>
+        <text class='title'>{{ item.conclusion.bust }}</text>
+      </view>
+      <view class='top'>
+        <text class='title'>{{ item.conclusion.blood }}</text>
+      </view>
+      <view class='content'>
+        <text>根据您的检查结果推荐了几个计划给您</text>
+        <button class='button' catchtap='plans' data-id='{{item.id}}'>选择计划</button>
+      </view>
+    </view>
+    <image src='../../image/add.png' bindtap='add'></image>
+  </view>
+</view>
+
+

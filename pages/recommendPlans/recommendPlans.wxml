@@ -1,0 +1,15 @@
+<!--pages/recommendPlans/recommendPlans.wxml-->
+<view class='container'>
+  <view class='tapContainer'>
+    <view class='top'>
+      <text class='header_text'>推荐计划</text>
+      <text class='detail_text'>根据您的体质，推荐如下健康计划</text>
+    </view>
+    <view class='item' wx:for="{{plans}}" bindtap='planDetail' data-index='{{index}}' wx:key='{{item.id}}'>
+      <image src='{{item.file.fileName}}'>
+      </image>
+      <text class='title'>{{item.name}}</text>
+      <text class='period'>{{"周期：" + item.period + " 天"}}</text>
+    </view>
+  </view>
+</view>

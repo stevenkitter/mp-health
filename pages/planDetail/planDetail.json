@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "foodCell": "/components/foodCell/foodCell"
+  },
+  "navigationBarTitleText": "计划详情"
+}

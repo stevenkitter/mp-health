@@ -1,0 +1,137 @@
+/* pages/planDetail/planDetail.wxss */
+
+.top {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.title {
+  color: #454545;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.desc {
+  color: #A2A2A2;
+  font-size: 14px;
+  
+}
+.four {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  width: 150rpx;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15rpx;
+  border-radius: 5px;
+  padding: 10px 2px;
+}
+.card0 {
+  background: #F66F88;
+}
+.card1 {
+  background: #83C1FE;
+}
+.card2 {
+  background: #F7BC6E;
+}
+.card3 {
+  background: #C490F4;
+}
+
+
+.card_title {
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.card_val{
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.card_unit {
+  font-size: 12px;
+  color: #fff;
+}
+
+.tip {
+  color: #A2A2A2;
+  background: #F8F8F8;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 13px;
+}
+
+.sports {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.sport_title {
+  color: #454545;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.item_container {
+  display: flex;
+  flex-direction: column;
+}
+.sport_item {
+  display: flex;
+  flex-direction: column;
+}
+.item_top{
+  border-left: 2px solid #F66F88;
+  padding: 0 10px;
+  font-size: 15px;
+}
+.item_content{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.item_container_food {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cells {
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.action{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 750rpx;
+  height: 50px;
+}
+.button {
+  background: #F66F88;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.button::after {
+  border: none;
+}
+.tapContainer {
+  padding-bottom: 60px;
+}

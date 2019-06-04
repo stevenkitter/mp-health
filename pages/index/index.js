@@ -1,15 +1,16 @@
 const app = getApp();
-
+const Http = require('../../utils/http.js')
+const Uris = require('../../utils/urls.js')
 Page({
     data: {
         sexPicker: ['男', '女'],
         userInfo: {
             sex: '0',
-            height: '166',
-            weight: '56',
-            yaowei: '66',
-            tunwei: '77',
-            eamil: '77',
+            height: '',
+            weight: '',
+            waist: '',
+            bust: '',
+            blood: '',
         },
         editFlag: {
 
@@ -20,26 +21,7 @@ Page({
 
     },
     onShow() {
-        let userId = wx.getStorageSync('jzgj_token');
-        let that = this;
-        wx.request({
-            url: app.globalData.api + '/userInfo',
-            data: {userId:userId},
-            success(res) {
-                wx.hideLoading()
-                if (res.data) {
-                    that.setData({
-                        userInfo:res.data
-                    })
-                } else {
-                    wx.showToast({
-                        title: '初始化失败',
-                        icon: 'none',
-                        duration: 2000
-                    })
-                }
-            }
-        })
+
 
     },
 
@@ -79,7 +61,7 @@ Page({
             title: '评测中',
             mask: true
         })
-        let userid = wx.getStorageSync('jzgj_token');
+        let userid = wx.getStorageSync('token');
         let info = this.data.userInfo;
         if (!info.sex) {
             info.sex='0'
@@ -100,7 +82,7 @@ Page({
             })
             return
         }
-        if (!info.yaowei) {
+        if (!info.waist) {
             wx.showToast({
                 title: '请输入腰围',
                 icon: 'none',
@@ -108,7 +90,7 @@ Page({
             })
             return
         }
-        if (!info.tunwei) {
+        if (!info.bust) {
             wx.showToast({
                 title: '请输入臀围',
                 icon: 'none',
@@ -116,28 +98,26 @@ Page({
             })
             return
         }
+      if (!info.blood) {
+        wx.showToast({
+          title: '请输入血糖',
+          icon: 'none',
+          duration: 2000
+        })
+        return
+      }
         info.userId = userid;
+        
         setTimeout(() => {
-            wx.request({
-                url: app.globalData.api + '/healthyInfo',
-                data: info,
-                success(res) {
-                    wx.hideLoading()
-                    if (res.data) {
-                        wx.showModal({
-                            title: "评测结果",
-                            content: "bmi评分：" + res.data.bmi + "\r\n" + "信息：" + res.data.desc+ "\r\n" +res.data.yao+"\r\n"+ res.data.tun+"\r\n"+res.data.xuetang,
-                            showCancel: false,
-                        })
-                    } else {
-                        wx.showToast({
-                            title: '评测失败,请重试',
-                            icon: 'none',
-                            duration: 2000
-                        })
-                    }
-                }
-            })
+          Http.POST({ height: info.height, weight: info.weight, waist: info.waist, bust: info.bust, blood: info.blood}, Uris.AddDetectionUrl).then(function(res){
+            wx.hideLoading()
+            console.log(res);
+            if(res.data.code === 200){
+              wx.reLaunch({
+                url: '/pages/detections/detections'
+              })
+            }
+          })
         }, 2000);
 
     }

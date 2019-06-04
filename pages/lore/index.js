@@ -11,7 +11,7 @@ Page({
   },
   onShow:function(){
     let that = this;
-    let userId = wx.getStorageSync('jzgj_token');
+    let userId = wx.getStorageSync('token');
     wx.request({
       url: app.globalData.api + '/allArticle',
       success(res) {

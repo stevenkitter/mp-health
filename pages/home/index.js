@@ -63,7 +63,7 @@ Page({
             success(res) {
                 wx.hideLoading()
                 if (res.data.state === 'success') {
-                    wx.setStorageSync('jzgj_token', res.data.desc)
+                    wx.setStorageSync('token', res.data.desc)
                     wx.reLaunch({
                         url: '/pages/index/index'
                     })

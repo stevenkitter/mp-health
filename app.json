@@ -2,11 +2,16 @@
   "pages": [
     "pages/home/index",
     "pages/index/index",
-    "pages/plan/index",
     "pages/near/index",
     "pages/lore/index",
     "pages/addPlan/addPlan",
-    "pages/loreDetails/index"
+    "pages/loreDetails/index",
+    "pages/detections/detections",
+    "pages/recommendPlans/recommendPlans",
+    "pages/planDetail/planDetail",
+    "pages/planList/planList",
+    "pages/circle/circle",
+    "pages/postCircle/postCircle"
   ],
   "permission": {
     "scope.userLocation": {
@@ -22,13 +27,13 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/detections/detections",
         "text": "首页",
         "iconPath": "/img/index1.png",
         "selectedIconPath": "/img/index2.png"
       },
       {
-        "pagePath": "pages/plan/index",
+        "pagePath": "pages/planList/planList",
         "text": "计划",
         "iconPath": "/img/plan1.png",
         "selectedIconPath": "/img/plan2.png"
