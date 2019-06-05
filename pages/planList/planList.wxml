@@ -1,6 +1,7 @@
 <!--pages/planList/planList.wxml-->
 <view class='container'>
-  <view class='tapContainer'>
+  <view class='placeholder' wx:if="{{!plan}}">您还未有任何计划，快去检测选择自己的健身计划吧～</view>
+  <view class='tapContainer' wx:if="{{!!plan}}">
     <view class='top'>
       <text class='plan_days'>{{plan.days}}</text>
       <text class='plan_text'>已经坚持天数</text>

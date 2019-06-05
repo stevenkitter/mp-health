@@ -37,3 +37,14 @@ image {
   right: 10px;
   bottom: 10px;
 }
+
+.btns {
+  display: flex;
+}
+
+.delete {
+  margin-top: 10px;
+  padding: 0px 10px;
+  font-size: 15px;
+  margin-left: 10px;
+}

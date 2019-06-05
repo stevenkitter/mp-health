@@ -9,12 +9,8 @@ Page({
         
     },
     onShow() {
-        let token = wx.getStorageSync('jzgj_token')
-        if (token) {
-            wx.reLaunch({
-                url: '/pages/index/index'
-            })
-        }
+        
+  
     },
     onChangeUser(event) {
         // console.log(event.detail);
@@ -65,7 +61,7 @@ Page({
                 if (res.data.state === 'success') {
                     wx.setStorageSync('token', res.data.desc)
                     wx.reLaunch({
-                        url: '/pages/index/index'
+                      url: '/pages/detections/detections'
                     })
                 } else {
                     wx.showToast({

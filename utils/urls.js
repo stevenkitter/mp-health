@@ -19,6 +19,7 @@ const AddCardUrl = BaseUrl + "/card/add";
 
 
 const AddDetectionUrl = BaseUrl + "/detection";
+const DeleteDetectionUrl = BaseUrl + "/detection";
 module.exports = {
   BaseUrl: BaseUrl,
   Code2SessionUri: Code2SessionUri,
@@ -30,5 +31,6 @@ module.exports = {
   PlanListUrl: PlanListUrl,
   MyCardUrl: MyCardUrl,
   AddCardUrl: AddCardUrl,
-  AddDetectionUrl: AddDetectionUrl
+  AddDetectionUrl: AddDetectionUrl,
+  DeleteDetectionUrl: DeleteDetectionUrl
 }

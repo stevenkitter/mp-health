@@ -8,6 +8,8 @@
     latitude="{{mapData.latitude}}"
     scale="{{mapData.scale}}"
     markers="{{mapData.markers}}"
+    bindmarkertap="bindmarkertap"
+    bindcallouttap="bindmarkertap"
   >
   </map>
 </view>

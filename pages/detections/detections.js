@@ -44,6 +44,23 @@ Page({
       url: '/pages/index/index',
     })
   },
+  deletePlan(data){
+    const that = this;
+    wx.showModal({
+      title: '提示',
+      content: '确认删除?',
+      success: function(res){
+        if (res.confirm) {
+          const id = data.currentTarget.dataset.id;
+          Http.DELETE({}, Uris.DeleteDetectionUrl+"?id="+id).then(function (res) {
+            console.log(res);
+            that.loadData();
+          })
+        }
+      }
+    })
+    
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

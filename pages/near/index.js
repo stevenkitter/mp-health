@@ -20,7 +20,6 @@ Page({
     wx.getLocation({
       type: "gcj02",
       success(res) {
-        console.log(res)
         _this.setData({
           "mapData.longitude":res.longitude,
           "mapData.latitude":res.latitude
@@ -35,6 +34,7 @@ Page({
               console.log(res.data.yd)
               let yd = res.data.yd.map((item)=>{
                 return {
+                  id: item.id,
                   latitude:item.location.lat,
                   longitude:item.location.lng,
                   iconPath:"/img/药店.png",
@@ -51,6 +51,7 @@ Page({
               });
               let yy = res.data.yy.map((item)=>{
                 return {
+                  id: item.id,
                   latitude:item.location.lat,
                   longitude:item.location.lng,
                   iconPath:"/img/医院.png",
@@ -67,6 +68,7 @@ Page({
               });
               let jsf = res.data.jsf.map((item)=>{
                 return {
+                  id: item.id,
                   latitude:item.location.lat,
                   longitude:item.location.lng,
                   iconPath:"/img/健身.png",
@@ -90,5 +92,17 @@ Page({
       })
       }
     });
+  },
+  bindmarkertap(res){
+    
+    for (var i = 0; i < this.data.mapData.markers.length; i++) {
+      let item = this.data.mapData.markers[i];
+      if (res.markerId === item.id) {
+        wx.openLocation({
+          latitude: item.latitude,
+          longitude: item.longitude,
+        })
+      }
+    }
   }
 })

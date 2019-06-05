@@ -1,9 +1,9 @@
 App({
   onLaunch: function () {
     const token = wx.getStorageSync("token")
-    if (token != "" || token != undefined) {
+    if (!token) {
       wx.reLaunch({
-        url: 'pages/detections/detections'
+        url: "pages/home/index",
       })
     }
   },

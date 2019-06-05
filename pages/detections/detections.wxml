@@ -17,7 +17,11 @@
       </view>
       <view class='content'>
         <text>根据您的检查结果推荐了几个计划给您</text>
-        <button class='button' catchtap='plans' data-id='{{item.id}}'>选择计划</button>
+        <view class='btns'>
+          <button class='button' catchtap='plans' data-id='{{item.id}}'>选择计划</button>
+          <button class='delete' catchtap='deletePlan' data-id='{{item.id}}'>删除</button>
+        </view>
+        
       </view>
     </view>
     <image src='../../image/add.png' bindtap='add'></image>

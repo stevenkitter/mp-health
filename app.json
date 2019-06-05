@@ -1,17 +1,17 @@
 {
   "pages": [
-    "pages/home/index",
+    "pages/detections/detections",
     "pages/index/index",
     "pages/near/index",
     "pages/lore/index",
     "pages/addPlan/addPlan",
     "pages/loreDetails/index",
-    "pages/detections/detections",
     "pages/recommendPlans/recommendPlans",
     "pages/planDetail/planDetail",
     "pages/planList/planList",
     "pages/circle/circle",
-    "pages/postCircle/postCircle"
+    "pages/postCircle/postCircle",
+    "pages/home/index"
   ],
   "permission": {
     "scope.userLocation": {
