@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container1">
   <view class="search-wrapper">
     <input class="search-input" type="text" confirm-type="search" placeholder="输入标题内容搜索" bindconfirm="searchLore" />
   </view>
